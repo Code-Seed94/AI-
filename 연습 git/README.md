@@ -1,8 +1,2 @@
-.env
-.env.*
-!.env.example
-.venv/
-venv/
-__pycache__/
-*.py[cod]
-.pytest_cache/
+# AI Git Starter
+Python study planner for Git practice
