@@ -72,11 +72,8 @@ switch ($Keyword) {
         }
         Write-Host "커밋 대상 파일:" -ForegroundColor Yellow
         $staged
-        $message = Read-Host "커밋 메시지를 입력하세요"
-        if ([string]::IsNullOrWhiteSpace($message)) {
-            Write-Host "커밋을 취소했습니다."
-            break
-        }
+        $message = "업뎃: $(Get-Date -Format 'yyyy-MM-dd HH:mm')"
+        Write-Host "자동 커밋 메시지: $message"
         Invoke-Git commit -m $message
         Invoke-Git push origin $branch
         break
