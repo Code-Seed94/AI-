@@ -1,3 +1,0 @@
-print(love)
-akehf= 'sadkl'
-
